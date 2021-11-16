@@ -1,32 +1,26 @@
 {
-	"name": "my-extension",
-	"version": "1.0.0",
-	"description": "",
-	"main": "index.js",
-	"scripts": {
-		"build": "sh script/build.sh",
-		"test": "echo \"Error: no test specified\" && exit 1"
-	},
-	"author": "",
-	"license": "ISC",
-	"devDependencies": {
-		"@babel/eslint-plugin": "7.14.5",
-		"@fontoxml/eslint-config": "4.0.2",
-		"@types/chai": "4.2.19",
-		"@types/mocha": "8.2.2",
-		"@types/sinon": "10.0.2",
-		"@typescript-eslint/eslint-plugin": "4.28.0",
-		"babel-eslint": "^10.1.0",
-		"eslint": "7.29.0",
-		"eslint-config-prettier": "8.3.0",
-		"eslint-import-resolver-typescript": "2.4.0",
-		"eslint-plugin-import": "2.23.4",
-		"eslint-plugin-prettier": "3.4.0",
-		"eslint-plugin-react": "7.24.0",
-		"eslint-plugin-react-hooks": "4.2.0",
-		"eslint-plugin-simple-import-sort": "7.0.0",
-		"prettier": "2.3.2",
-		"typescript": "4.3.4"
-	},
-	"type": "module"
+    "name": "my-extension",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "build": "sh script/build.sh",
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "lint": "eslint ./ --ext .js"
+    },
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "@babel/eslint-plugin": "7.14.5",
+        "@fontoxml/eslint-config": "4.0.2",
+        "@types/sinon": "10.0.2",
+        "babel-eslint": "^10.1.0",
+        "eslint": "^7.29.0",
+        "eslint-config-prettier": "8.3.0",
+        "eslint-import-resolver-typescript": "2.4.0",
+        "eslint-plugin-import": "2.23.4",
+        "eslint-plugin-prettier": "3.4.0",
+        "eslint-plugin-simple-import-sort": "7.0.0",
+        "prettier": "2.3.2"
+    }
 }

@@ -1,4 +1,4 @@
-import parseNode from './parseNode.js';
+import parseNode from './utils/parseNode.js';
 
 /**
  * div: modal-container

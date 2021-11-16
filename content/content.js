@@ -1,4 +1,8 @@
-import createClipboardModal from './createClipboardModal.js';
+import addClipboardModalEventListener from './addClipboardModalEventListener.js';
+
+
+
+addClipboardModalEventListener();
 
 const clipboardStore = [];
 const addClipboardStore = (thing) => {
@@ -40,17 +44,4 @@ document.addEventListener('dblclick', dispatchPasteEvent, true);
 
 document.addEventListener('paste', (event) => {
 	console.log('paste', event);
-});
-
-document.addEventListener('keydown', (event) => {
-	if (!event.ctrlKey || event.key !== 'q') {
-		return;
-	}
-	event.preventDefault();
-	event.stopPropagation();
-
-	createClipboardModal(
-		[{ text: 'mehmet' }, { text: 'said' }, { text: 'coskun' }],
-		document
-	);
 });
